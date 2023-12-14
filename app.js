@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 import { logger } from './services/logger.service.js'
-logger.info('server.js loaded...')
+logger.info('app.js loaded...')
 
 const app = express()
 const server = http.createServer(app)
