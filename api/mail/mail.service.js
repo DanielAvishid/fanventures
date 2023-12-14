@@ -21,7 +21,7 @@ const transporter = nodeMailer.createTransport(config)
 async function sendUpdateMail(firstName, lastName, email, role, otherRole, platforms, otherPlatforms) {
     const messageToSend = {
         from: 'noreply.fanventures@gmail.com',
-        to: 'danielavishid@gmail.com',
+        to: 'info@fan-ventures.com',
         subject: "Letter of intent has been received",
         html: `
             <h5>Name: ${firstName + ' ' + lastName}</h5>
@@ -43,7 +43,7 @@ async function sendUpdateMail(firstName, lastName, email, role, otherRole, platf
 async function sendQuestionMail(firstName, lastName, email, message) {
     const messageToSend = {
         from: 'noreply.fanventures@gmail.com',
-        to: 'danielavishid@gmail.com',
+        to: 'info@fan-ventures.com',
         subject: "Question from landing page",
         html: `
             <h3>Name: ${firstName + ' ' + lastName}</h3>
