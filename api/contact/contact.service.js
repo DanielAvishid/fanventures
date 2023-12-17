@@ -1,5 +1,4 @@
 import { dbService } from '../../services/db.service.js'
-import { logger } from '../../services/logger.service.js'
 
 export const contactService = {
     add
@@ -28,7 +27,6 @@ async function add(firstName, lastName, email, role, otherRole, platforms, other
         const collection = await dbService.getCollection('letterofintent')
         await collection.insertOne(letterOfIntent)
     } catch (err) {
-        logger.info('Cannot insert contact', err)
         throw err
     }
 }
