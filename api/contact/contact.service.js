@@ -24,7 +24,9 @@ async function add(firstName, lastName, email, role, otherRole, platforms, other
             platforms: platforms,
             otherPlatforms: otherPlatforms
         }
+        console.log(('CC BEFORE:', true))
         const collection = await dbService.getCollection('letterofintent')
+        console.log(('CC AFTER:', true))
         await collection.insertOne(letterOfIntent)
     } catch (err) {
         throw err
