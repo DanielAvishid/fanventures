@@ -6,6 +6,7 @@ export const mailService = {
 }
 
 const config = {
+    host: 'smtp.gmail.com',
     service: 'gmail',
     auth: {
         user: process.env.MAIL_PROVIDER,
