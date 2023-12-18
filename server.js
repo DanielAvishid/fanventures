@@ -63,3 +63,5 @@ const port = process.env.PORT || 8080
 server.listen(port, () => {
     logger.info('Server is running on port: ' + port)
 })
+
+logger.info(process.env.MONGO_DB)
