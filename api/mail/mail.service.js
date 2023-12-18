@@ -8,8 +8,8 @@ export const mailService = {
 const config = {
     service: 'gmail',
     auth: {
-        user: MAIL_PROVIDER,
-        pass: MAIL_PASS
+        user: process.env.MAIL_PROVIDER,
+        pass: process.env.MAIL_PASS
     },
     tls: {
         rejectUnauthorized: false
@@ -20,7 +20,7 @@ const transporter = nodeMailer.createTransport(config)
 
 async function sendUpdateMail(firstName, lastName, email, role, otherRole, platforms, otherPlatforms) {
     const messageToSend = {
-        from: MAIL_PROVIDER,
+        from: process.env.MAIL_PROVIDER,
         to: 'danielavishid@gmail.com',
         subject: "Letter of intent has been received",
         html: `
@@ -42,7 +42,7 @@ async function sendUpdateMail(firstName, lastName, email, role, otherRole, platf
 
 async function sendQuestionMail(firstName, lastName, email, message) {
     const messageToSend = {
-        from: MAIL_PROVIDER,
+        from: process.env.MAIL_PROVIDER,
         to: 'danielavishid@gmail.com',
         subject: "Question from landing page",
         html: `
