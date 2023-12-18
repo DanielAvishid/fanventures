@@ -1,4 +1,5 @@
 import { dbService } from '../../services/db.service.js'
+import { logger } from '../../services/logger.service.js'
 
 export const contactService = {
     add
@@ -24,9 +25,9 @@ async function add(firstName, lastName, email, role, otherRole, platforms, other
             platforms: platforms,
             otherPlatforms: otherPlatforms
         }
-        console.log(('CC BEFORE:', true))
+        logger.info('BEFORE SERVICE')
         const collection = await dbService.getCollection('letterofintent')
-        console.log(('CC AFTER:', true))
+        logger.info('AFTER SERVICE')
         await collection.insertOne(letterOfIntent)
     } catch (err) {
         throw err
