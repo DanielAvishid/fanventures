@@ -3,6 +3,9 @@ import express from 'express'
 import cors from 'cors'
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -55,7 +58,7 @@ app.get('/**', (req, res) => {
     res.sendFile(path.resolve('public/index.html'))
 })
 
-const port = process.env.PORT || 3030
+const port = process.env.PORT || 8080
 
 server.listen(port, () => {
     logger.info('Server is running on port: ' + port)

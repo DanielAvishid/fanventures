@@ -1,4 +1,5 @@
 export default {
-    dbURL: "mongodb+srv://waldi:waldi_FV2024@cluster0.grtmgmn.mongodb.net/?retryWrites=true&w=majority",
-    dbName: "Fanventures_db"
+    dbURL: process.env.MONGO_DB,
+    dbName: process.env.DB_NAME
 }
+
