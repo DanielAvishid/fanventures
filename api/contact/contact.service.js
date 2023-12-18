@@ -13,8 +13,10 @@ async function add(firstName, lastName, email, role, otherRole, platforms, other
                 lastName: lastName,
                 email: email
             }
+            logger.info('BEFORE')
             const collection = await dbService.getCollection('sub')
             await collection.insertOne(subToAdd)
+            logger.info('AFTER')
         }
         const letterOfIntent = {
             firstName: firstName,
@@ -25,9 +27,7 @@ async function add(firstName, lastName, email, role, otherRole, platforms, other
             platforms: platforms,
             otherPlatforms: otherPlatforms
         }
-        logger.info('BEFORE SERVICE')
         const collection = await dbService.getCollection('letterofintent')
-        logger.info('AFTER SERVICE')
         await collection.insertOne(letterOfIntent)
     } catch (err) {
         throw err
