@@ -1,6 +1,7 @@
 import MongoClient from 'mongodb'
 
 import { config } from '../config/index.js'
+import { logger } from './logger.service.js'
 
 export const dbService = {
     getCollection
@@ -25,7 +26,7 @@ async function _connect() {
         const client = await MongoClient.connect(config.dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
         const db = client.db(config.dbName)
         dbConn = db
-        console.log(('DB SERVICE:', true))
+        logger.info('CHECK HERE DB SERVICE')
         return db
     } catch (err) {
         logger.error('Cannot Connect to DB', err)
