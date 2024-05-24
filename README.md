@@ -4,7 +4,7 @@ This project is a web application built with a Node.js and Express backend and a
 
 ## About
 
-I worked as a full-stack developer at FanVentures, where this project was 100% my responsibility. As the solo developer, I created the entire application using Node.js, Express.js, and React.js to receive letters of intent and automate email responses to user questions.
+I worked as a full-stack developer at FanVentures, where this project was 100% my responsibility. As the solo developer, I created the entire application using Node.js, Express.js, and React.js to receive letters of intent and automate email responses to user questions. Additionally, I handled the deployment and hosting of the application with a VPS provider.
 
 ## Features
 
