@@ -14,6 +14,7 @@ I worked as a full-stack developer at FanVentures, where this project was 100% m
 - **Send Email API**: Sends emails via Gmail.
 - **Fully Responsive Design**: The website is fully responsive and works seamlessly on all devices.
 - **Form Validation**: Robust form validation to ensure accurate and complete data submission.
+- **SASS for Styling**: Utilizes SASS for more efficient and maintainable CSS.
 
 ## Live Demo
 
