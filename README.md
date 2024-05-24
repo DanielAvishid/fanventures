@@ -12,3 +12,7 @@ I worked as a full-stack developer at FanVentures, where this project was 100% m
 - **React Frontend**: Provides a user interface for interacting with the application.
 - **Add Letter of Intent API**: Allows users to submit a letter of intent.
 - **Send Email API**: Sends emails via Gmail.
+
+## Live Demo
+
+You can access the live version of the application at [https://fan-ventures.com/#/](https://fan-ventures.com/#/).
