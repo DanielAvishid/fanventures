@@ -13,6 +13,7 @@ I worked as a full-stack developer at FanVentures, where this project was 100% m
 - **Add Letter of Intent API**: Allows users to submit a letter of intent.
 - **Send Email API**: Sends emails via Gmail.
 - **Fully Responsive Design**: The website is fully responsive and works seamlessly on all devices.
+- **Form Validation**: Robust form validation to ensure accurate and complete data submission.
 
 ## Live Demo
 
